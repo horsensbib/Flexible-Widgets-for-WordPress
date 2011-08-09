@@ -37,3 +37,6 @@ Not yet. The plugin is too young. But please feel free to ask.
 * Brand new plugin. Still playing with the bubble wrap.
 
 == Upgrade Notice ==
+
+= 0.1 =
+Install and enjoy.
