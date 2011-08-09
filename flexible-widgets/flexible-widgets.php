@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Flexible Widgets
-Plugin URI: http://www.netsans.dk/flexible-widgets
-Description: Flexible Widgets lets you display a widget on any category or page you wish. When setting up the widget, you are able to select the categories and/or pages where you want to display the widget. If none are selected, the widget will be displayed globally on your site, exactly like a default WordPress widget.  
+Plugin URI: https://github.com/horsensbib/Flexible-Widgets-for-WordPress
+Description: This plugin lets you display a widget on any category or page you wish. When setting up the widget, you are able to select the categories and/or pages where you want to display the widget. If none are selected, the widget will be displayed globally on your site, exactly like a default WordPress widget.  
 Version: 0.1
 Author: Morten Brunbjerg Bech
 Author URI: http://twitter.com/bech/
@@ -101,10 +101,10 @@ class Flexible_Widget_Pages extends WP_Widget {
 		</p>
 		
 		<div id="<?php echo $this->get_field_id('title'); ?>-selector" class="selector-container">
-			<p><?php __('Display on selected categories and pages only'); ?></p>
+			<p><?php _e('Display on selected categories and pages only'); ?></p>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-categories" class="select-categories select-content">
-				<?php __('Categories'); ?>
+				<?php _e('Categories'); ?>
 				<ul class="selectlist list:category categorychecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -136,7 +136,7 @@ class Flexible_Widget_Pages extends WP_Widget {
 			</div>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-pages" class="select-pages select-content">
-				<?php __('Pages'); ?>
+				<?php _e('Pages'); ?>
 				<ul class="selectlist list:pages pageschecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -272,10 +272,10 @@ class Flexible_Widget_Links extends WP_Widget {
 		</p>
 		
 		<div id="<?php echo $this->get_field_id('title'); ?>-selector" class="selector-container">
-			<p><?php __('Display on selected categories and pages only'); ?></p>
+			<p><?php _e('Display on selected categories and pages only'); ?></p>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-categories" class="select-categories select-content">
-				<?php __('Categories'); ?>
+				<?php _e('Categories'); ?>
 				<ul class="selectlist list:category categorychecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -307,7 +307,7 @@ class Flexible_Widget_Links extends WP_Widget {
 			</div>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-pages" class="select-pages select-content">
-				<?php __('Pages'); ?>
+				<?php _e('Pages'); ?>
 				<ul class="selectlist list:pages pageschecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -394,10 +394,10 @@ class Flexible_Widget_Search extends WP_Widget {
 		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></label></p>
 		
 		<div id="<?php echo $this->get_field_id('title'); ?>-selector" class="selector-container">
-			<p><?php __('Display on selected categories and pages only'); ?></p>
+			<p><?php _e('Display on selected categories and pages only'); ?></p>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-categories" class="select-categories select-content">
-				<?php __('Categories'); ?>
+				<?php _e('Categories'); ?>
 				<ul class="selectlist list:category categorychecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -429,7 +429,7 @@ class Flexible_Widget_Search extends WP_Widget {
 			</div>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-pages" class="select-pages select-content">
-				<?php __('Pages'); ?>
+				<?php _e('Pages'); ?>
 				<ul class="selectlist list:pages pageschecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -556,10 +556,10 @@ class Flexible_Widget_Archives extends WP_Widget {
 		</p>
 		
 		<div id="<?php echo $this->get_field_id('title'); ?>-selector" class="selector-container">
-			<p><?php __('Display on selected categories and pages only'); ?></p>
+			<p><?php _e('Display on selected categories and pages only'); ?></p>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-categories" class="select-categories select-content">
-				<?php __('Categories'); ?>
+				<?php _e('Categories'); ?>
 				<ul class="selectlist list:category categorychecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -591,7 +591,7 @@ class Flexible_Widget_Archives extends WP_Widget {
 			</div>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-pages" class="select-pages select-content">
-				<?php __('Pages'); ?>
+				<?php _e('Pages'); ?>
 				<ul class="selectlist list:pages pageschecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -695,10 +695,10 @@ class Flexible_Widget_Meta extends WP_Widget {
 			<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
 		
 		<div id="<?php echo $this->get_field_id('title'); ?>-selector" class="selector-container">
-			<p><?php __('Display on selected categories and pages only'); ?></p>
+			<p><?php _e('Display on selected categories and pages only'); ?></p>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-categories" class="select-categories select-content">
-				<?php __('Categories'); ?>
+				<?php _e('Categories'); ?>
 				<ul class="selectlist list:category categorychecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -730,7 +730,7 @@ class Flexible_Widget_Meta extends WP_Widget {
 			</div>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-pages" class="select-pages select-content">
-				<?php __('Pages'); ?>
+				<?php _e('Pages'); ?>
 				<ul class="selectlist list:pages pageschecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -826,10 +826,10 @@ class Flexible_Widget_Calendar extends WP_Widget {
 		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
 		
 		<div id="<?php echo $this->get_field_id('title'); ?>-selector" class="selector-container">
-			<p><?php __('Display on selected categories and pages only'); ?></p>
+			<p><?php _e('Display on selected categories and pages only'); ?></p>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-categories" class="select-categories select-content">
-				<?php __('Categories'); ?>
+				<?php _e('Categories'); ?>
 				<ul class="selectlist list:category categorychecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -861,7 +861,7 @@ class Flexible_Widget_Calendar extends WP_Widget {
 			</div>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-pages" class="select-pages select-content">
-				<?php __('Pages'); ?>
+				<?php _e('Pages'); ?>
 				<ul class="selectlist list:pages pageschecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -965,10 +965,10 @@ class Flexible_Widget_Text extends WP_Widget {
 		<p><input id="<?php echo $this->get_field_id('filter'); ?>" name="<?php echo $this->get_field_name('filter'); ?>" type="checkbox" <?php checked(isset($instance['filter']) ? $instance['filter'] : 0); ?> />&nbsp;<label for="<?php echo $this->get_field_id('filter'); ?>"><?php _e('Automatically add paragraphs'); ?></label></p>
 		
 		<div id="<?php echo $this->get_field_id('title'); ?>-selector" class="selector-container">
-			<p><?php __('Display on selected categories and pages only'); ?></p>
+			<p><?php _e('Display on selected categories and pages only'); ?></p>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-categories" class="select-categories select-content">
-				<?php __('Categories'); ?>
+				<?php _e('Categories'); ?>
 				<ul class="selectlist list:category categorychecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -1000,7 +1000,7 @@ class Flexible_Widget_Text extends WP_Widget {
 			</div>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-pages" class="select-pages select-content">
-				<?php __('Pages'); ?>
+				<?php _e('Pages'); ?>
 				<ul class="selectlist list:pages pageschecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -1145,10 +1145,10 @@ class Flexible_Widget_Categories extends WP_Widget {
 		<label for="<?php echo $this->get_field_id('hierarchical'); ?>"><?php _e( 'Show hierarchy' ); ?></label></p>
 		
 		<div id="<?php echo $this->get_field_id('title'); ?>-selector" class="selector-container">
-			<p><?php __('Display on selected categories and pages only'); ?></p>
+			<p><?php _e('Display on selected categories and pages only'); ?></p>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-categories" class="select-categories select-content">
-				<?php __('Categories'); ?>
+				<?php _e('Categories'); ?>
 				<ul class="selectlist list:category categorychecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -1180,7 +1180,7 @@ class Flexible_Widget_Categories extends WP_Widget {
 			</div>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-pages" class="select-pages select-content">
-				<?php __('Pages'); ?>
+				<?php _e('Pages'); ?>
 				<ul class="selectlist list:pages pageschecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -1321,10 +1321,10 @@ class Flexible_Widget_Recent_Posts extends WP_Widget {
 		<input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo $number; ?>" size="3" /></p>
 		
 		<div id="<?php echo $this->get_field_id('title'); ?>-selector" class="selector-container">
-			<p><?php __('Display on selected categories and pages only'); ?></p>
+			<p><?php _e('Display on selected categories and pages only'); ?></p>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-categories" class="select-categories select-content">
-				<?php __('Categories'); ?>
+				<?php _e('Categories'); ?>
 				<ul class="selectlist list:category categorychecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -1356,7 +1356,7 @@ class Flexible_Widget_Recent_Posts extends WP_Widget {
 			</div>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-pages" class="select-pages select-content">
-				<?php __('Pages'); ?>
+				<?php _e('Pages'); ?>
 				<ul class="selectlist list:pages pageschecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -1507,10 +1507,10 @@ class Flexible_Widget_Recent_Comments extends WP_Widget {
 		<input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo $number; ?>" size="3" /></p>
 		
 		<div id="<?php echo $this->get_field_id('title'); ?>-selector" class="selector-container">
-			<p><?php __('Display on selected categories and pages only'); ?></p>
+			<p><?php _e('Display on selected categories and pages only'); ?></p>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-categories" class="select-categories select-content">
-				<?php __('Categories'); ?>
+				<?php _e('Categories'); ?>
 				<ul class="selectlist list:category categorychecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -1542,7 +1542,7 @@ class Flexible_Widget_Recent_Comments extends WP_Widget {
 			</div>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-pages" class="select-pages select-content">
-				<?php __('Pages'); ?>
+				<?php _e('Pages'); ?>
 				<ul class="selectlist list:pages pageschecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -1617,7 +1617,7 @@ class Flexible_Widget_RSS extends WP_Widget {
 ?>
 		
 		<p>
-			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Overskrift'); ?>
+			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title'); ?>
 			<input class="widefat"
 			id="<?php echo $this->get_field_id('title'); ?>"
 			name="<?php echo $this->get_field_name('title'); ?>"
@@ -1637,14 +1637,14 @@ class Flexible_Widget_RSS extends WP_Widget {
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Vis'); ?>
+			<label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Show'); ?>
 				<input
 				id="<?php echo $this->get_field_id('number'); ?>"
 				name="<?php echo $this->get_field_name('number'); ?>"
 				type="text"
 				value="<?php echo $number; ?>"
 				style="width:30px;" />	
-				<?php _e('artikler'); ?>.			
+				<?php _e('entries'); ?>.			
 			</label>
 		</p>
 		
@@ -1657,7 +1657,7 @@ class Flexible_Widget_RSS extends WP_Widget {
 				value="excerpt"
 				<?php if ( 'excerpt' == $instance['checkExcerpt'] ) echo 'checked="checked"'; ?>
 				 />
-				<?php _e('Vis uddrag'); ?>
+				<?php _e('Show excerpt'); ?>
 			</label>
 		</p>
 		
@@ -1670,7 +1670,7 @@ class Flexible_Widget_RSS extends WP_Widget {
 				value="author"
 				<?php if ( 'author' == $instance['checkAuthor'] ) echo 'checked="checked"'; ?>
 				 />
-				<?php _e('Vis forfatter'); ?>
+				<?php _e('Show author'); ?>
 			</label>
 		</p>
 		
@@ -1683,17 +1683,17 @@ class Flexible_Widget_RSS extends WP_Widget {
 				value="date"
 				<?php if ( 'date' == $instance['checkDate'] ) echo 'checked="checked"'; ?>
 				 />
-				<?php _e('Vis dato'); ?>
+				<?php _e('Show date'); ?>
 			</label>
 		</p>
 		
 		
 		
 			<div id="<?php echo $this->get_field_id('title'); ?>-selector" class="selector-container">
-				<p><?php __('Display on selected categories and pages only'); ?></p>
+				<p><?php _e('Display on selected categories and pages only'); ?></p>
 				
 				<div id="<?php echo $this->get_field_id('title'); ?>-categories" class="select-categories select-content">
-					<?php __('Categories'); ?>
+					<?php _e('Categories'); ?>
 					<ul class="selectlist list:category categorychecklist form-no-clear">
 						<input type="hidden" name="" value="0" />						
 						<?php 
@@ -1725,7 +1725,7 @@ class Flexible_Widget_RSS extends WP_Widget {
 				</div>
 				
 				<div id="<?php echo $this->get_field_id('title'); ?>-pages" class="select-pages select-content">
-					<?php __('Pages'); ?>
+					<?php _e('Pages'); ?>
 					<ul class="selectlist list:pages pageschecklist form-no-clear">
 						<input type="hidden" name="" value="0" />						
 						<?php 
@@ -1917,10 +1917,10 @@ class Flexible_Widget_Tag_Cloud extends WP_Widget {
 	
 		
 		<div id="<?php echo $this->get_field_id('title'); ?>-selector" class="selector-container">
-			<p><?php __('Display on selected categories and pages only'); ?></p>
+			<p><?php _e('Display on selected categories and pages only'); ?></p>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-categories" class="select-categories select-content">
-				<?php __('Categories'); ?>
+				<?php _e('Categories'); ?>
 				<ul class="selectlist list:category categorychecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -1952,7 +1952,7 @@ class Flexible_Widget_Tag_Cloud extends WP_Widget {
 			</div>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-pages" class="select-pages select-content">
-				<?php __('Pages'); ?>
+				<?php _e('Pages'); ?>
 				<ul class="selectlist list:pages pageschecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -2084,10 +2084,10 @@ class Flexible_Widget_Tag_Cloud extends WP_Widget {
 		</p>
 		
 		<div id="<?php echo $this->get_field_id('title'); ?>-selector" class="selector-container">
-			<p><?php __('Display on selected categories and pages only'); ?></p>
+			<p><?php _e('Display on selected categories and pages only'); ?></p>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-categories" class="select-categories select-content">
-				<?php __('Categories'); ?>
+				<?php _e('Categories'); ?>
 				<ul class="selectlist list:category categorychecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
@@ -2119,7 +2119,7 @@ class Flexible_Widget_Tag_Cloud extends WP_Widget {
 			</div>
 				
 			<div id="<?php echo $this->get_field_id('title'); ?>-pages" class="select-pages select-content">
-				<?php __('Pages'); ?>
+				<?php _e('Pages'); ?>
 				<ul class="selectlist list:pages pageschecklist form-no-clear">
 					<input type="hidden" name="" value="0" />						
 					<?php 
