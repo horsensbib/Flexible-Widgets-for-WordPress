@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Flexible Widgets ===
 Contributors: bechster
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=E7Y2MU7AAYMTE&lc=DK&item_name=Netsans&item_number=flexible%2dwidget&currency_code=DKK&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted
 Tags: widget, widgets, related content, content management, cms, sidebar
